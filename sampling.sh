@@ -9,6 +9,5 @@ csvstack weather_2014.csv <(tail +1 weather_2015.csv) > weather.csv
 
 rm weather_data.xlsx
 
-csvlook weather.csv | sample -r 0.3 | sed 's/,//g' | sed 's/| //g' | sed 's/|//g' | sed 's/  */ /g' | sed 's/ /,/g' > weather_sample.csv
-
+cat weather.csv | sample -r 0.3 > weather_sampling.csv
 
