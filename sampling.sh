@@ -9,5 +9,5 @@ csvstack weather_2014.csv <(tail +1 weather_2015.csv) > weather.csv
 
 rm weather_data.xlsx
 
-cat weather.csv | sample -r 0.3 > weather_sampling.csv
+cat weather.csv | sample -r 0.3 > sample_weather.csv
 
