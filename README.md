@@ -8,7 +8,8 @@ download the weather excel file
 
 convert every sheet into their own csv files
 
-`in2csv weather_data.xlsx --sheet "weather_2014" > weather_2014.csv | in2csv weather_data.xlsx --sheet "weather_2015" > weather_2015.csv`
+`in2csv weather_data.xlsx --sheet "weather_2014" > weather_2014.csv`
+`in2csv weather_data.xlsx --sheet "weather_2015" > weather_2015.csv`
 
 merge both of the newly generated csv files
 
